@@ -1,0 +1,427 @@
+{
+  "version": 1,
+  "featured": [
+    {
+      "id": "orbital-watch",
+      "kind": "view",
+      "title": "Orbital watch",
+      "subtitle": "Every tracked satellite, live",
+      "badge": "LIVE",
+      "image": "/shell/cards/orbital-watch.jpg",
+      "icon": "satellite",
+      "live": true,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": 15,
+            "lon": 20,
+            "altitude_m": 14000000,
+            "heading_deg": 0,
+            "pitch_deg": -90
+          },
+          "layers": [
+            "satellites"
+          ],
+          "style": "normal"
+        }
+      }
+    },
+    {
+      "id": "sydney-cameras",
+      "kind": "view",
+      "title": "Sydney, street level",
+      "subtitle": "Live road cameras across the city",
+      "badge": "LIVE",
+      "image": "/shell/cards/sydney-cameras.jpg",
+      "icon": "camera",
+      "live": true,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": -33.8352,
+            "lon": 151.211,
+            "altitude_m": 2400,
+            "heading_deg": 180,
+            "pitch_deg": -40
+          },
+          "layers": [
+            "cctv"
+          ],
+          "style": "normal"
+        }
+      }
+    },
+    {
+      "id": "london-live",
+      "kind": "view",
+      "title": "London, live",
+      "subtitle": "Traffic cameras over the Thames",
+      "badge": "LIVE",
+      "image": "/shell/cards/london-live.jpg",
+      "icon": "camera",
+      "live": true,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": 51.4832,
+            "lon": -0.1278,
+            "altitude_m": 3200,
+            "heading_deg": 0,
+            "pitch_deg": -50
+          },
+          "layers": [
+            "cctv"
+          ],
+          "style": "normal"
+        }
+      }
+    },
+    {
+      "id": "tokyo-night",
+      "kind": "view",
+      "title": "Tokyo in night vision",
+      "subtitle": "Shibuya through a green lens",
+      "badge": "",
+      "image": "/shell/cards/tokyo-night.jpg",
+      "icon": "pin",
+      "live": false,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": 35.6479,
+            "lon": 139.7005,
+            "altitude_m": 900,
+            "heading_deg": 0,
+            "pitch_deg": -35
+          },
+          "layers": [],
+          "style": "surveillance"
+        }
+      }
+    },
+    {
+      "id": "storm-watch",
+      "kind": "view",
+      "title": "Storm watch",
+      "subtitle": "Wind and cyclones over the Atlantic",
+      "badge": "LIVE",
+      "image": "/shell/cards/storm-watch.jpg",
+      "icon": "cloud",
+      "live": true,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": 24,
+            "lon": -55,
+            "altitude_m": 9500000,
+            "heading_deg": 0,
+            "pitch_deg": -90
+          },
+          "layers": [
+            "wind",
+            "weather-cyclones"
+          ],
+          "style": "normal"
+        }
+      }
+    },
+    {
+      "id": "quakes-today",
+      "kind": "view",
+      "title": "Quakes today",
+      "subtitle": "Every quake in the last 24 hours",
+      "badge": "LIVE",
+      "image": "/shell/cards/quakes-today.jpg",
+      "icon": "quake",
+      "live": true,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": 10,
+            "lon": 150,
+            "altitude_m": 13000000,
+            "heading_deg": 0,
+            "pitch_deg": -90
+          },
+          "layers": [
+            "earthquakes"
+          ],
+          "style": "normal"
+        }
+      }
+    },
+    {
+      "id": "brisbane-transit",
+      "kind": "view",
+      "title": "Brisbane on the move",
+      "subtitle": "Buses, trains and ferries, live",
+      "badge": "LIVE",
+      "image": "/shell/cards/brisbane-transit.jpg",
+      "icon": "pin",
+      "live": true,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": -27.4855,
+            "lon": 153.0251,
+            "altitude_m": 6500,
+            "heading_deg": 0,
+            "pitch_deg": -75
+          },
+          "layers": [
+            "transit"
+          ],
+          "style": "normal"
+        }
+      }
+    },
+    {
+      "id": "military-skies",
+      "kind": "view",
+      "title": "Military skies",
+      "subtitle": "Aircraft broadcasting over Europe",
+      "badge": "LIVE",
+      "image": "/shell/cards/military-skies.jpg",
+      "icon": "plane",
+      "live": true,
+      "action": {
+        "type": "view",
+        "payload": {
+          "camera": {
+            "lat": 50,
+            "lon": 10,
+            "altitude_m": 4800000,
+            "heading_deg": 0,
+            "pitch_deg": -90
+          },
+          "layers": [
+            "military"
+          ],
+          "style": "normal"
+        }
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool-cameras",
+      "kind": "tool",
+      "title": "Cameras",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "camera",
+      "live": false,
+      "action": {
+        "type": "screen",
+        "payload": {
+          "screen": "cameras"
+        }
+      }
+    },
+    {
+      "id": "tool-radio",
+      "kind": "tool",
+      "title": "Radio",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "radio",
+      "live": false,
+      "action": {
+        "type": "screen",
+        "payload": {
+          "screen": "radio"
+        }
+      }
+    },
+    {
+      "id": "tool-flights",
+      "kind": "tool",
+      "title": "Flights",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "plane",
+      "live": false,
+      "action": {
+        "type": "layer",
+        "payload": {
+          "ids": [
+            "flights"
+          ],
+          "view": {
+            "camera": {
+              "lat": 47,
+              "lon": 8,
+              "altitude_m": 3600000,
+              "heading_deg": 0,
+              "pitch_deg": -90
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tool-ships",
+      "kind": "tool",
+      "title": "Ships",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "ship",
+      "live": false,
+      "action": {
+        "type": "layer",
+        "payload": {
+          "ids": [
+            "ais-live-vessels"
+          ],
+          "needsKey": "aisstream",
+          "view": {
+            "camera": {
+              "lat": 1.2,
+              "lon": 103.8,
+              "altitude_m": 600000,
+              "heading_deg": 0,
+              "pitch_deg": -90
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tool-satellites",
+      "kind": "tool",
+      "title": "Satellites",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "satellite",
+      "live": false,
+      "action": {
+        "type": "layer",
+        "payload": {
+          "ids": [
+            "satellites"
+          ],
+          "view": {
+            "camera": {
+              "lat": 15,
+              "lon": 20,
+              "altitude_m": 20000000,
+              "heading_deg": 0,
+              "pitch_deg": -90
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tool-weather",
+      "kind": "tool",
+      "title": "Weather",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "cloud",
+      "live": false,
+      "action": {
+        "type": "layer",
+        "payload": {
+          "ids": [
+            "wind",
+            "weather-satellite"
+          ],
+          "view": {
+            "camera": {
+              "lat": 20,
+              "lon": -40,
+              "altitude_m": 14000000,
+              "heading_deg": 0,
+              "pitch_deg": -90
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tool-quakes",
+      "kind": "tool",
+      "title": "Quakes",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "quake",
+      "live": false,
+      "action": {
+        "type": "layer",
+        "payload": {
+          "ids": [
+            "earthquakes"
+          ],
+          "view": {
+            "camera": {
+              "lat": 10,
+              "lon": 150,
+              "altitude_m": 16000000,
+              "heading_deg": 0,
+              "pitch_deg": -90
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tool-launches",
+      "kind": "tool",
+      "title": "Launches",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "rocket",
+      "live": false,
+      "action": {
+        "type": "layer",
+        "payload": {
+          "ids": [
+            "rocket-launches",
+            "satellites"
+          ],
+          "view": {
+            "camera": {
+              "lat": 25,
+              "lon": -75,
+              "altitude_m": 14000000,
+              "heading_deg": 0,
+              "pitch_deg": -90
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tool-more",
+      "kind": "tool",
+      "title": "More",
+      "subtitle": "",
+      "badge": "",
+      "image": null,
+      "icon": "more",
+      "live": false,
+      "action": {
+        "type": "screen",
+        "payload": {
+          "screen": "more"
+        }
+      }
+    }
+  ]
+}
